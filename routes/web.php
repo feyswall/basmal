@@ -19,3 +19,8 @@ Route::get("/", function () {
 })->name("/");
 
 Route::get("/contacts", [PagesController::class, "getContact"] )->name("contact");
+
+Route::get("/aboutUs", [PagesController::class, "getAbout"])->name("about");
+
+Route::get("/services", [PagesController::class, "getService"])->name("service");
+
